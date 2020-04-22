@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: ${databaseURL}
+    username: ${databaseUsername}
+    password: ${databasePassword}
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: none
+      show-sql: true
+    properties:
+        hibernate:
+          jdbc:
+            lob:
+              non_contextual_creation: true
+app:
+  version: 1.0.0
